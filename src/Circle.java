@@ -19,12 +19,12 @@ public class Circle {
     }
 
     public double circumference(){
-
+        double circumference = 2 * Math.PI * this.radius;
         return circumference;
     }
 
     public double area(){
-
+        double area = Math.PI * (Math.pow(this.radius, 2));
         return area;
     }
 
@@ -35,16 +35,26 @@ public class Circle {
 
     public void printAttributes() {
         System.out.println(Double.toString(this.xPoint));
+        System.out.println(Double.toString(this.yPoint));
+        System.out.println(Double.toString(this.radius));
     }
 
     public boolean isInside(double x, double y){
 
         // return true if a point represented in the parameters falls inside the circle, false otherwise
+        return true;
     }
 
     public void move(int x, int y){
+        this.xPoint = x + this.xPoint;
+        this.yPoint = y + this.yPoint;
+    }
 
-        // moves the origin by a specified amount.
+    public static void main(String[] args){
+        Circle circle1 = new Circle();
+        System.out.println(circle1.area());
+        System.out.println(circle1.circumference());
+        circle1.printAttributes();
     }
 
 }
