@@ -16,4 +16,9 @@ public class FullName {
         return this.title + ". " + this.fN + " " + this.mN + " " + this.lN;
     }
 
+    public static void main(String[] args){
+        FullName someGuy = new FullName("Mr", "Bob", "Bobby","Bobbert");
+        System.out.println(someGuy.toString());
+    }
+
 }
