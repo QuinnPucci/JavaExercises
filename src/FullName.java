@@ -17,8 +17,7 @@ public class FullName {
     }
 
     public static void main(String[] args){
-        FullName someGuy = new FullName("Mr", "Bob", "Bobby","Bobbert");
-        System.out.println(someGuy.toString());
+
     }
 
 }

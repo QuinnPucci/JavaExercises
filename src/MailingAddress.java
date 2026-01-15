@@ -15,6 +15,10 @@ public class MailingAddress {
 
     @Override
     public String toString(){
-        return this.fullName + "'s Address: " + this.streetAddress + ", " + this.city + ", " + this.province + ", " + this.postC;
+        return this.fullName +": " + this.streetAddress + ", " + this.city + ", " + this.province + ", " + this.postC;
+    }
+
+    public static void main (String[] args){
+
     }
 }
