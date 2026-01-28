@@ -21,7 +21,6 @@ public class ShippingLabel {
         System.out.println(shipper.toString());
         MailingAddress fromHere = new MailingAddress(shipper, "789 Ship Road", "Calgary", "Alberta", "Z9Y5V4");
         System.out.println(fromHere.toString());
-
         ShippingLabel label = new ShippingLabel(fromHere, somePlace);
         System.out.println(label);
     }
