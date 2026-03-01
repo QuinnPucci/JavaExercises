@@ -1,7 +1,16 @@
+/*-------------------------------
+Name: Quinn
+Student ID: 3742290
+Course: COMP308
+Description: Modified Music5 class example from TIJ to include
+Playable interface which defines the ability to play a musical note.
+This was separated from the existing interface instrument.
+-------------------------------*/
+
 //: interfaces/music5/Music5.java
 // Interfaces.
 import util.Note;
-import static util.Print.*;
+import static util.Print.*; // had to modify the imports from the given class.
 
 interface Instrument {
     // Compile-time constant:
@@ -11,6 +20,10 @@ interface Instrument {
     void adjust();
 }
 
+/*-------------------------------
+This is the new interface.
+Plays the given musical note.
+-------------------------------*/
 interface Playable{
     void play(Note n);
 }
@@ -48,18 +61,21 @@ class Woodwind extends Wind {
 }
 
 public class Music5 {
-    // Doesn't care about type, so new types
-    // added to the system still work right:
+
+    // Plays a standard tuning note on a playable object using the playable interface
+
     static void tune(Playable i) {
-        // ...
         i.play(Note.MIDDLE_C);
     }
+
+    // Tunes every playable in the array
+
     static void tuneAll(Playable[] e) {
         for(Playable i : e)
             tune(i);
     }
     public static void main(String[] args) {
-        // Upcasting during addition to the array:
+        // Array now stores playable refs since tune and tuneall depend on play
         Playable[] orchestra = {
                 new Wind(),
                 new Percussion(),

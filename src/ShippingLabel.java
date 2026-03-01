@@ -1,17 +1,28 @@
+/*-------------------------------
+Name: Quinn
+Student ID: 3742290
+Course: COMP308
+Description: Represents a shipping label containing a ship-from and ship-to MailingAddress object.
+The label is printed by creating a ShippingLabel and printing it, which is formatted using toString
+-------------------------------*/
 public class ShippingLabel {
+    // Attributes are two Mailing Adress objects
     MailingAddress shipFrom;
     MailingAddress shipTo;
 
+    // Constructor
     public ShippingLabel(MailingAddress shipFrom, MailingAddress shipTo){
         this.shipFrom = shipFrom;
         this.shipTo = shipTo;
     }
 
+    // String formatting
     @Override
     public String toString(){
         return "Shipping From " + this.shipFrom + "\nShipping Too " + this.shipTo;
     }
 
+    // Testing done in Main method as per instructions.
     public static void main(String[] args){
         FullName someGuy = new FullName("Mr", "Bob", "Bobby","Bobbert");
         System.out.println(someGuy.toString());
