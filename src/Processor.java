@@ -1,3 +1,8 @@
+/*
+this is the last of the 4 part exercise, a way to process the different items in the generic containers.
+this is a warm up for a bigger and similar project in a different repo. computer party
+ */
+
 import java.lang.reflect.Array;
 import java.util.*;
 
