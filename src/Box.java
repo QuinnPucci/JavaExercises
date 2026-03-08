@@ -1,3 +1,8 @@
+/*
+working with generic containers. first part of a 4 part exercise that
+includes the other classes, FoodBox, Item, & Processor
+ */
+
 import java.util.*;
 
 public class Box<T> {
