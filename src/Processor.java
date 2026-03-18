@@ -41,7 +41,7 @@ public class Processor {
         Cheese oldChed = new Cheese("Old Ched");
         Cheese swiss = new Cheese("swiss");
 
-        Service deliver = new Service("Deviler");
+        Service deliver = new Service("Deliver");
         Service massage = new Service("Massage");
         Service call = new Service("Call");
 
